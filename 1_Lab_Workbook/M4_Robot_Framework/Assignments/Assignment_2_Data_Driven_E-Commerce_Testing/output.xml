@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.5 (Python 3.10.0 on win32)" generated="2026-09-22T15:55:54.845095" rpa="false" schemaversion="5">
+<suite id="s1" name="Data Driven Ecommerce" source="C:\Users\arpan\Documents\Placement_Drive\Wipro_selenium\Practice\M4\ass_2\data_driven_ecommerce.robot">
+<test id="s1-t1" name="Search Laptop" line="10">
+<kw name="Open E-Commerce Website" owner="ecommerce_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-22T15:55:55.271857" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-22T15:55:55.271857" elapsed="7.567018"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-22T15:56:02.841876" elapsed="0.026449"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-09-22T15:56:02.884593" level="INFO">Current page contains text 'Demo Web Shop'.</msg>
+<arg>Demo Web Shop</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-09-22T15:56:02.868325" elapsed="0.017267"/>
+</kw>
+<status status="PASS" start="2026-09-22T15:55:55.270845" elapsed="7.614747"/>
+</kw>
+<kw name="Search Product And Verify">
+<kw name="Search Product" owner="ecommerce_keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-22T15:56:02.888632" level="INFO">Typing text 'laptop' into text field 'id=small-searchterms'.</msg>
+<arg>id=small-searchterms</arg>
+<arg>${product}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-22T15:56:02.888632" elapsed="0.125193"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-09-22T15:56:03.015834" level="INFO">Clicking button 'xpath=//input[@value='Search']'.</msg>
+<arg>xpath=//input[@value='Search']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-22T15:56:03.013825" elapsed="0.857284"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-09-22T15:56:03.882127" level="INFO">Current page contains text 'Search'.</msg>
+<arg>Search</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-09-22T15:56:03.872107" elapsed="0.010020"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-22T15:56:04.032319" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/laptop_search.png"&gt;&lt;img src="screenshots/laptop_search.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>screenshots/${product}_search.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-22T15:56:03.883128" elapsed="0.150677"/>
+</kw>
+<arg>${product}</arg>
+<status status="PASS" start="2026-09-22T15:56:02.887633" elapsed="1.146172"/>
+</kw>
+<kw name="Verify Search Result" owner="ecommerce_keywords">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-09-22T15:56:04.045114" level="INFO">Current page contains text 'laptop'.</msg>
+<arg>${product}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-09-22T15:56:04.033805" elapsed="0.011309"/>
+</kw>
+<arg>${product}</arg>
+<status status="PASS" start="2026-09-22T15:56:04.033805" elapsed="0.011309"/>
+</kw>
+<arg>laptop</arg>
+<status status="PASS" start="2026-09-22T15:56:02.886629" elapsed="1.158485"/>
+</kw>
+<kw name="Close E-Commerce Website" owner="ecommerce_keywords" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-09-22T15:56:04.046112" elapsed="2.149934"/>
+</kw>
+<status status="PASS" start="2026-09-22T15:56:04.046112" elapsed="2.149934"/>
+</kw>
+<status status="PASS" start="2026-09-22T15:55:55.269535" elapsed="10.926511"/>
+</test>
+<test id="s1-t2" name="Search Book" line="11">
+<kw name="Open E-Commerce Website" owner="ecommerce_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-22T15:56:06.198047" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-22T15:56:06.198047" elapsed="4.228976"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-22T15:56:10.428041" elapsed="0.035916"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-09-22T15:56:10.481105" level="INFO">Current page contains text 'Demo Web Shop'.</msg>
+<arg>Demo Web Shop</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-09-22T15:56:10.464956" elapsed="0.016149"/>
+</kw>
+<status status="PASS" start="2026-09-22T15:56:06.198047" elapsed="4.284067"/>
+</kw>
+<kw name="Search Product And Verify">
+<kw name="Search Product" owner="ecommerce_keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-22T15:56:10.484110" level="INFO">Typing text 'book' into text field 'id=small-searchterms'.</msg>
+<arg>id=small-searchterms</arg>
+<arg>${product}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-22T15:56:10.484110" elapsed="0.090159"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-09-22T15:56:10.575499" level="INFO">Clicking button 'xpath=//input[@value='Search']'.</msg>
+<arg>xpath=//input[@value='Search']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-22T15:56:10.574269" elapsed="0.898034"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-09-22T15:56:11.483307" level="INFO">Current page contains text 'Search'.</msg>
+<arg>Search</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-09-22T15:56:11.472303" elapsed="0.011004"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-22T15:56:11.578365" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/book_search.png"&gt;&lt;img src="screenshots/book_search.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>screenshots/${product}_search.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-22T15:56:11.483307" elapsed="0.095058"/>
+</kw>
+<arg>${product}</arg>
+<status status="PASS" start="2026-09-22T15:56:10.483109" elapsed="1.095256"/>
+</kw>
+<kw name="Verify Search Result" owner="ecommerce_keywords">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-09-22T15:56:11.592917" level="INFO">Current page contains text 'book'.</msg>
+<arg>${product}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-09-22T15:56:11.579420" elapsed="0.013497"/>
+</kw>
+<arg>${product}</arg>
+<status status="PASS" start="2026-09-22T15:56:11.578365" elapsed="0.014552"/>
+</kw>
+<arg>book</arg>
+<status status="PASS" start="2026-09-22T15:56:10.482114" elapsed="1.110803"/>
+</kw>
+<kw name="Close E-Commerce Website" owner="ecommerce_keywords" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-09-22T15:56:11.593911" elapsed="2.168606"/>
+</kw>
+<status status="PASS" start="2026-09-22T15:56:11.593911" elapsed="2.168606"/>
+</kw>
+<status status="PASS" start="2026-09-22T15:56:06.197043" elapsed="7.565474"/>
+</test>
+<test id="s1-t3" name="Search Computer" line="12">
+<kw name="Open E-Commerce Website" owner="ecommerce_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-22T15:56:13.765942" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-22T15:56:13.765942" elapsed="4.906332"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-22T15:56:18.672274" elapsed="0.030665"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-09-22T15:56:18.717273" level="INFO">Current page contains text 'Demo Web Shop'.</msg>
+<arg>Demo Web Shop</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-09-22T15:56:18.703938" elapsed="0.013335"/>
+</kw>
+<status status="PASS" start="2026-09-22T15:56:13.764729" elapsed="4.952544"/>
+</kw>
+<kw name="Search Product And Verify">
+<kw name="Search Product" owner="ecommerce_keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-22T15:56:18.720265" level="INFO">Typing text 'computer' into text field 'id=small-searchterms'.</msg>
+<arg>id=small-searchterms</arg>
+<arg>${product}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-22T15:56:18.719265" elapsed="0.089062"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-09-22T15:56:18.809677" level="INFO">Clicking button 'xpath=//input[@value='Search']'.</msg>
+<arg>xpath=//input[@value='Search']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-22T15:56:18.809677" elapsed="0.861360"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-09-22T15:56:19.681234" level="INFO">Current page contains text 'Search'.</msg>
+<arg>Search</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-09-22T15:56:19.671037" elapsed="0.010197"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-22T15:56:19.839620" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/computer_search.png"&gt;&lt;img src="screenshots/computer_search.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>screenshots/${product}_search.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-22T15:56:19.682256" elapsed="0.157364"/>
+</kw>
+<arg>${product}</arg>
+<status status="PASS" start="2026-09-22T15:56:18.719265" elapsed="1.120355"/>
+</kw>
+<kw name="Verify Search Result" owner="ecommerce_keywords">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-09-22T15:56:19.853489" level="INFO">Current page contains text 'computer'.</msg>
+<arg>${product}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-09-22T15:56:19.840745" elapsed="0.013961"/>
+</kw>
+<arg>${product}</arg>
+<status status="PASS" start="2026-09-22T15:56:19.839620" elapsed="0.015086"/>
+</kw>
+<arg>computer</arg>
+<status status="PASS" start="2026-09-22T15:56:18.718267" elapsed="1.136439"/>
+</kw>
+<kw name="Close E-Commerce Website" owner="ecommerce_keywords" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-09-22T15:56:19.855717" elapsed="2.184572"/>
+</kw>
+<status status="PASS" start="2026-09-22T15:56:19.854706" elapsed="2.185583"/>
+</kw>
+<status status="PASS" start="2026-09-22T15:56:13.763705" elapsed="8.277583"/>
+</test>
+<status status="PASS" start="2026-09-22T15:55:54.847118" elapsed="27.194170"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Data Driven Ecommerce" id="s1" pass="3" fail="0" skip="0">Data Driven Ecommerce</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

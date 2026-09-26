@@ -1,0 +1,19 @@
+# Environment configuration for the framework.
+# Switch environments without touching any code:
+#   behave -D env=automationexercise   (default)
+#   behave -D env=jsonplaceholder
+#
+# This is what makes the framework "reusable" rather than hardcoded to one API.
+
+default_env: automationexercise
+
+environments:
+  automationexercise:
+    base_url: "https://automationexercise.com/api"
+    timeout: 15
+    max_response_time_ms: 3000
+
+  jsonplaceholder:
+    base_url: "https://jsonplaceholder.typicode.com"
+    timeout: 15
+    max_response_time_ms: 2000
