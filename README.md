@@ -69,16 +69,16 @@ statement, my solution code, and output screenshots.
 
 | Module | What it covers | # Assignments |
 |---|---|---|
-| M1 — Selenium Automation | WebDriver setup, locators, alerts, frames/windows, waits, web tables, JS execution | 6 |
+| M1 — Selenium Automation | Locators, explicit waits, dynamic dropdowns/checkboxes, JS alerts/confirms, web tables, windows/tabs/iframes | 6 |
 | M2 — Unit Test Frameworks | `unittest`, PyTest, Page Object Model | 3 |
-| M3 — Python BDD & REST Automation | HTTP requests in Python, API testing, Behave BDD | 3 |
+| M3 — Python BDD & REST Automation | Behave BDD with Selenium, data-driven REST API testing, Page Object Model + Behave | 3 |
 | M4 — Robot Framework | Keyword-driven & data-driven testing | 2 |
 
 ## Certificates
 
 - `PythonforAutomation.pdf`
 - `SeleniumWebdriverusingpython.pdf`
-- `TestAutomationwithplaywright&robotframework.pdf`
+- `TestAutomationwithplayright&robotframework.pdf` (Test Automation with Playwright & Robot Framework)
 
 ## Tools & Tech
 
